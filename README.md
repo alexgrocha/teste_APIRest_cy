@@ -1,2 +1,2 @@
-# teste_APIRest_cy
+# Teste_APIRest_cy
 Criando teste Automatizado utilizando Cypress
