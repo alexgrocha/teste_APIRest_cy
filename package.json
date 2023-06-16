@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.12.0"
+    "cypress": "^12.14.0"
   },
   "dependencies": {
     "cypress-multi-reporters": "^1.6.3",
