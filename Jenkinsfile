@@ -10,16 +10,9 @@ pipeline{
         stage('Instalar depedências'){
             steps{
                 sh 'npm install'
-                
             }
         } 
         stage('Abrir Servidor'){
-            steps{
-                sh 'NO_COLOR=1 npm start'
-                sh 'npm i start-server-and-test'
-            }
-        }
-        stage('Executar Testes'){
             steps{
                 sh 'NO_COLOR=1 npm cy:run'
             }
