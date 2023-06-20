@@ -2,19 +2,15 @@ pipeline{
     agent any
 
     stages{
-        stage('Clonar o repositório'){
+        stage('Clonar o repositório, instalar dependências!'){
             steps{
                 git branch: 'main', url: 'https://github.com/alexgrocha/teste_APIRest_cy.git'
-            }
-        }
-        stage('Instalar depedências'){
-            steps{
                 sh 'npm install'
             }
-        } 
+        }
         stage('Abrir Servidor'){
             steps{
-                sh 'NO_COLOR=1 npm cy:run'
+                sh 'NO_COLOR=1 npm cy:run-ci'
             }
         }
     }    
